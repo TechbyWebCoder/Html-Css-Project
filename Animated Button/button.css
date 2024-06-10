@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-color: #000000;
+  background-image: url(image.png);
+  }
+  
+  button {
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    outline: none;
+    border: 2px solid #ff0000;
+    margin: 40px;
+    width: 150px;
+    height: 60px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #fff;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+    transition: 0.45s;
+    transition-delay: 0s;
+  }
+  
+  button:hover {
+    transition-delay: 1.5s;
+    color: #000;
+    box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000,
+      0 0 100px #ff0000;
+  }
+  
+  button span {
+    position: relative;
+    z-index: 100;
+  }
+  
+  button::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #ff0000;
+    box-shadow: 5px -8px 0 #ff0000, 5px 8px 0 #ff0000;
+    transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+  }
+  
+  button:hover::before {
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 #ff0000, 5px 0 0 #ff0000;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+  }
+  
+  button::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #ff0000; 
+    box-shadow: -5px -8px 0 #ff0000, -5px 8px 0 #ff0000;
+    transition: width 0.5s, right 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+  }
+  
+  button:hover::after {
+    width: 60%;
+    height: 102%;
+    right: -2px;
+    box-shadow: -5px 0 0 #ff0000, -5px 0 0 #ff0000;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+  }
+  
