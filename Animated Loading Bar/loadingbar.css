@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+  }
+  
+  .loading-wrapper {
+    text-align: center;
+  }
+  
+  .loading-text {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: top;
+  }
+  
+  .loading-bar {
+    width: 300px;
+    height: 29px;
+    background: linear-gradient(to right, #f53d3d, #ffcf44, #46e29d);
+    position: relative;
+    border-radius: 5px;
+    border: #f53d3d;
+  }
+  
+  .loading-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    animation: loading 3s infinite alternate-reverse;
+  }
+  
+  @keyframes loading {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 50%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
