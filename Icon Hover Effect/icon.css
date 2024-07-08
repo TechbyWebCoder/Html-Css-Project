@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: black;
+    font-family: Arial, sans-serif;
+}
+
+.icon-container {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; 
+    font-size: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.icon i {
+    position: relative;
+    z-index: 1;
+}
+
+.icon:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    width: 30px;
+    height: 5px;
+    background: #ff0171;
+    border-radius: 10px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.icon:hover:after {
+    top: 0;
+    height: 100%;
+    width: 80%;
+    border-radius: 30px;
+    opacity: 1;
+    animation: show 0.5s ease forwards;
+}
+
+.icon.instagram:hover:after {
+    box-shadow: 0 0 15px #ff0171, 0 0 30px #ff0171;
+    background: #ff0171;
+}
+
+.icon.twitter:hover:after {
+    box-shadow: 0 0 15px #017bff, 0 0 30px #017bff;
+    background: #017bff;
+}
+
+.icon.youtube:hover:after {
+    box-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000;
+    background: #ff0000;
+}
+
+.icon.facebook:hover:after {
+    box-shadow: 0 0 15px #3b5998, 0 0 30px #3b5998;
+    background: #3b5998;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) scaleY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) scaleY(1);
+    }
+}
