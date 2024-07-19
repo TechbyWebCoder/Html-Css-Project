@@ -1,0 +1,46 @@
+:root {
+    --activeclr: #000000;
+    }
+    body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--activeclr);
+    transition: background 300ms ease;
+    }
+    .nav-container {
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    }
+    .nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    }
+    .navitem {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #ff0000;
+    position: relative;
+    transition: color 300ms ease;
+    cursor: pointer;
+    }
+    
+
+    
+    .navitem:hover {
+    color: #000;
+    }
+    
+    .navitem.active {
+    color: #000;
+    }
