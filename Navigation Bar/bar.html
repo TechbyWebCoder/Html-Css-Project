@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation Bar</title>
+<link rel="stylesheet" href="bar.css">
+<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+</head>
+
+<body>
+<div class="nav-container">
+<div class="nav">
+<a class="navitem" onclick="select(this)" data-clr="#e4ecfa">
+<ion-icon name="fa-home"></ion-icon>
+</a>
+<a class="navitem" onclick="select(this)" data-clr="#f6caca">
+<ion-icon name="fa-user"></ion-icon>
+</a>
+<a class="navitem" onclick="select(this)" data-clr="#fff6cc">
+<ion-icon name="search"></ion-icon>
+</a>
+<a class="navitem" onclick="select(this)" data-clr="#d4f4dd">
+<ion-icon name="settings"></ion-icon>
+</a>
+<div class="indicator"></div>
+</div>
+</div>
+<script src="bar.js"></script>
+</body>
+</html>
