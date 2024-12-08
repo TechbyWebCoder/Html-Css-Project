@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+  }
+  
+  .over-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .balls-container {
+    margin-bottom: 20px;
+  }
+  
+  .ball {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    font-size: 18px;
+    background-color: #000000;
+  }
+  
+  .buttons-container {
+    margin-bottom: 20px;
+  }
+  
+  .buttons-container button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .buttons-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .score-display,
+  .cumulative-score {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  #current-score {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  button:disabled {
+    background-color: rgb(0, 0, 0);
+    cursor: not-allowed;
+  }
+  
+  button:disabled:hover {
+    background-color: gray;
+  }
+  
