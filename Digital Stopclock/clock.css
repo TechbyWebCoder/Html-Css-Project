@@ -1,0 +1,73 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+  
+  #stopwatch {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    font-weight: 900;
+    color: #fff;
+  }
+  
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    position: relative;
+    animation: spin 4s linear infinite;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .time {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.7em;
+    font-weight: 300;
+    color: #fff;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  input[type="button"] {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    font-weight: 300;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+  
+  input[type="button"]:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  input[type="button"]:not(:disabled):hover {
+    background: #fff;
+    color: #333;
+    transform: scale(1.1);
+  }
