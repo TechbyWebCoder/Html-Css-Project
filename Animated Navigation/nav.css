@@ -1,0 +1,121 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #000000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.toggle {
+  color: red;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff6347;
+}
+
+nav ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ff6347;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  color: red;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin-left: 00px; 
+  transition: color 0.3s; /
+}
+
+.line {
+  width: 100%;
+  height: 4px;
+  background-color: #fff; 
+  margin: 4px 0;
+  transition: all 0.3s;
+}
+
+.icon:hover .line {
+  background-color: #ff6347; 
+}
+
+.active .line1,
+.active .line2 {
+  background-color: #ff6347;
+}
+
+.active .line1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.active .line2 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    flex-direction: column;
+    display: none;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
