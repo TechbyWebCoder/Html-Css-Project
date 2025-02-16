@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:sans-serif;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+  color: white;
+  background-color: #000000; 
+}
+
+h3 {
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: 600; 
+  color: white;
+}
+
+small {
+  size: 30px;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 400; 
+}
+
+.fa-heart {
+  color: red;
+}
+
+.loveMe {
+  height: 300px;
+  width: 300px;
+  background: url('like.jpg') no-repeat center center/cover;
+  margin: auto;
+  cursor: pointer;
+  max-width: 100%;
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+  border-radius: 10px; 
+}
+
+.loveMe .fa-heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0.7;
+  animation: grow 0.6s ease-in-out forwards;
+}
+
+@keyframes grow {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
+}
+
