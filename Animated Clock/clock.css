@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #000; 
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #444;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 8px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.toggle:hover {
+  background-color: #666;
+  transform: scale(1.1);
+}
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clock {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; 
+  transition: border-color 0.5s, background-color 0.5s;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.needle {
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: #fff;
+  transform-origin: 100%;
+  transition: background-color 0.5s;
+}
+
+.hour {
+  height: 6px;
+  width: 35%;
+}
+
+.minute {
+  height: 4px;
+  width: 55%;
+}
+
+.second {
+  height: 2px;
+  width: 65%;
+  background-color: #e74c3c; 
+}
+
+.center-point {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: background-color 0.5s;
+}
+
+.time,
+.date {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #fff; 
+  transition: color 0.5s;
+}
