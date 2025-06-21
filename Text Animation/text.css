@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  background-color: #000000;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ff00ff;
+  animation: textEffect 5s infinite alternate;
+  margin-bottom: 20px;
+}
+
+@keyframes textEffect {
+  0% {
+    color: #ff0000;
+    transform: translateY(0) rotate(0);
+  }
+  25% {
+    color: #ffff00;
+    transform: translateY(-10px) rotate(-10deg);
+  }
+  50% {
+    color: #00ff00;
+    transform: translateY(0) rotate(0);
+  }
+  75% {
+    color: #00ffff;
+    transform: translateY(10px) rotate(10deg);
+  }
+  100% {
+    color: #ff00ff;
+    transform: translateY(0) rotate(0);
+  }
+}
+
+div {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+input[type="number"] {
+  padding: 5px;
+  font-size: 1rem;
+  width: 60px;
+}
