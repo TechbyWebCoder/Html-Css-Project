@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    background: #000;
+}
+
+.crcl {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    position: relative;
+    background-image: url("sun.png");
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    object-fit: cover;
+    animation: movement;
+}
+
+@keyframes movement {
+    0% { left: 0px; top: 0px; }
+    5% { left: 300px; top: 200px; }
+    10% { left: 600px; top: 100px; }
+    15% { left: 600px; top: 600px; }
+    20% { left: 300px; top: 600px; }
+    25% { left: 600px; top: 400px; }
+    30% { left: 100px; top: 0px; }
+    35% { left: 600px; top: 200px; }
+    40% { left: 100px; top: 500px; }
+    45% { left: 0px; top: 600px; }
+    50% { left: 600px; top: 600px; }
+    55% { left: 300px; top: 200px; }
+    60% { left: 600px; top: 100px; }
+    65% { left: 800px; top: 600px; }
+    70% { left: 300px; top: 600px; }
+    75% { left: 600px; top: 400px; }
+    80% { left: 100px; top: 0px; }
+    85% { left: 600px; top: 200px; }
+    90% { left: 100px; top: 500px; }
+    95% { left: 0px; top: 600px; }
+    100% { left: 600px; top: 200px; }
+}
+
+.details {
+    float: right;
+    width: 400px;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(6, 148, 25);
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.ground {
+    float: left;
+}
+
+.level {
+    display: flex;
+    margin: 10px;
+    margin-top: 25px;
+}
+
+.display_score {
+    margin-top: 25px;
+}
+
+button {
+    border-radius: 25px;
+    width: 8em;
+    height: 3em;
+    font-size: 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(6, 148, 25);
+    box-shadow: 0px 10px 20px 10px white;
+    transition-duration: 1s;
+}
